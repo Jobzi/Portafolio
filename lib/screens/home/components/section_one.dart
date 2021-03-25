@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:portafolio/constant/Colors.dart';
 import 'package:portafolio/constant/sized_config.dart';
 import 'package:portafolio/screens/home/widgets/section_title.dart';
-import 'package:portafolio/widgets/cached_image.dart';
 
 class SectionOne extends StatelessWidget {
   const SectionOne({Key key}) : super(key: key);
