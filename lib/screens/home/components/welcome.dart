@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:portafolio/constant/Colors.dart';
 import 'package:portafolio/constant/sized_config.dart';
+import 'package:portafolio/screens/home/widgets/animated_buttom.dart';
 
 class WelcomeSection extends StatelessWidget {
   const WelcomeSection({Key key}) : super(key: key);
@@ -41,21 +42,7 @@ class WelcomeSection extends StatelessWidget {
                 fontSize: 40,
                 fontWeight: FontWeight.bold),
           ),
-          Padding(
-            padding: EdgeInsets.all(10.0),
-            child: Container(
-              padding: EdgeInsets.all(15.0),
-              decoration: BoxDecoration(
-                  border: Border.all(color: Color(0Xfffab73d)),
-                  borderRadius: BorderRadius.circular(10)),
-              child: Text(
-                "Get in Touch",
-                style: GoogleFonts.inconsolata(
-                  color: ColorTheme.yellow,
-                ),
-              ),
-            ),
-          ),
+          AnimatedButtom(),
           Offstage(
             offstage: context.isPhone ? true : false,
             child: SizedBox(

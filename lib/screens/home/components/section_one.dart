@@ -32,10 +32,10 @@ class SectionOne extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.all(15.0),
                   child: Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "¡Hola!, Soy Jipson Murillo desarrollador de Software del ombligo del mundo Ecuador. Tengo un gusto por el desarrollo de software. Mi gusto por el desarrollo comenzó desde los videojuegos de saber cómo funcionaba. El dia de hoy aun sigo jugando a los videojuegos como el Valorant me parece tan interesante como la industria del e-sports han llegado a transformar esta industria. Además tengo muchas aficiones como practicar el ciclismo, me gusta mucho nadar, tomar fotografías de todos los lugares que visito. Mi experiencia de desarrollo como tal comienza como tal desde 2015 como Ecuador  un país tan pequeño y el desarrollo de software no tan demandado me pareció una skill que cada día es más importante saber, me gusto mucho que el día de hoy sigo practicando y estudiando.",
                     style: GoogleFonts.raleway().copyWith(
                         color: Color(0xFF5e6668),
-                        fontSize: 30,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
                 ),

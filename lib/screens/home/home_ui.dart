@@ -4,10 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portafolio/constant/Colors.dart';
 import 'package:portafolio/screens/home/components/section_one.dart';
 import 'package:portafolio/screens/home/components/section_two.dart';
+import 'widgets/icon_buttom.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'components/header.dart';
 import 'package:get/get.dart';
 import 'components/welcome.dart';
+import 'package:animate_do/animate_do.dart' show BounceInDown;
 
 class HomeUI extends StatelessWidget {
   const HomeUI({Key key}) : super(key: key);
@@ -15,27 +17,45 @@ class HomeUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorTheme.primary.withOpacity(0.9),
-      body: Stack(
-        children: [
-          Padding(
-            padding: EdgeInsets.only(left: 60),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Header(),
-                  WelcomeSection(),
-                  SectionOne(),
-                  SectionTwo(),
-                ],
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: buildLinearGradient(),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 60),
+              child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(
+                    parent: AlwaysScrollableScrollPhysics()),
+                child: Column(
+                  children: [
+                    BounceInDown(child: Header()),
+                    WelcomeSection(),
+                    SectionOne(),
+                    SectionTwo(),
+                  ],
+                ),
               ),
             ),
-          ),
-          PositiodedLeft(),
-          PositionedRight(),
-        ],
+            PositiodedLeft(),
+            PositionedRight(),
+          ],
+        ),
       ),
     );
+  }
+
+  LinearGradient buildLinearGradient() {
+    return LinearGradient(
+        colors: [
+          ColorTheme.primary,
+          Color(0xFF2f4c58),
+        ],
+        //begin: FractionalOffset(0.0, 1.0),
+        end: FractionalOffset(2.0, 0.0),
+        //stops: [0.0, 1.0],
+        tileMode: TileMode.clamp);
   }
 }
 
@@ -55,7 +75,7 @@ class PositionedRight extends StatelessWidget {
           RotatedBox(
             quarterTurns: -1,
             child: Text(
-              " jipsonmurillo@gmai.com",
+              " jipsonmurillo@gmail.com",
               style: GoogleFonts.inconsolata(wordSpacing: 5).copyWith(
                 color: ColorTheme.yellow,
                 fontSize: 20,
@@ -90,33 +110,22 @@ class PositiodedLeft extends StatelessWidget {
         offstage: (context.isPhone) ? true : false,
         child: Column(
           children: [
-            Padding(
-              padding: EdgeInsets.all(15.0),
-              child: Icon(
-                Feather.instagram,
-                color: ColorTheme.yellow,
-              ),
+            IconButtom(
+              iconData: Feather.instagram,
+              urlString: "https://www.instagram.com/jipson_n/",
             ),
-            Padding(
-              padding: EdgeInsets.all(15.0),
-              child: Icon(
-                Feather.facebook,
-                color: ColorTheme.yellow,
-              ),
+            IconButtom(
+              iconData: Feather.facebook,
+              urlString: "https://www.facebook.com/Jobzi1/",
             ),
-            Padding(
-              padding: EdgeInsets.all(15.0),
-              child: Icon(
-                Feather.github,
-                color: ColorTheme.yellow,
-              ),
+            IconButtom(
+              iconData: Feather.github,
+              urlString: "https://github.com/Jobzi",
             ),
-            Padding(
-              padding: EdgeInsets.all(15.0),
-              child: Icon(
-                Feather.linkedin,
-                color: ColorTheme.yellow,
-              ),
+            IconButtom(
+              iconData: Feather.linkedin,
+              urlString:
+                  "https://www.linkedin.com/in/jipson-murillo-867b24122/",
             ),
             RotatedBox(
               quarterTurns: -1,

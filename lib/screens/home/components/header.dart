@@ -49,17 +49,17 @@ class Header extends StatelessWidget {
                     SectionTitle(
                       numbre: "01.",
                       text: "Acerca de Mi",
-                      textColor: Colors.black87,
+                      textColor: Colors.black,
                     ),
+                    // SectionTitle(
+                    //   numbre: " 02.",
+                    //   text: "Contacto",
+                    //   textColor: Colors.black,
+                    // ),
                     SectionTitle(
                       numbre: " 02.",
-                      text: "Contacto",
-                      textColor: Colors.black87,
-                    ),
-                    SectionTitle(
-                      numbre: " 03.",
                       text: "Trabajos ",
-                      textColor: Colors.black87,
+                      textColor: Colors.black,
                     ),
                   ],
                 ),
