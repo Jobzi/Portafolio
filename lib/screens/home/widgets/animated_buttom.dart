@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portafolio/constant/Colors.dart';
 
 class AnimatedButtom extends StatelessWidget {
@@ -20,7 +19,8 @@ class AnimatedButtom extends StatelessWidget {
               borderRadius: BorderRadius.circular(10)),
           child: Text(
             "Get in Touch",
-            style: GoogleFonts.inconsolata(
+            style: TextStyle(
+              fontFamily: 'Inconsolata',
               color: ColorTheme.yellow,
             ),
           ),

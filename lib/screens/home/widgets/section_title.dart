@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SectionTitle extends StatelessWidget {
   final String numbre;
@@ -13,12 +12,16 @@ class SectionTitle extends StatelessWidget {
     return RichText(
       text: TextSpan(
         text: numbre ?? "1.",
-        style: GoogleFonts.inconsolata().copyWith(
-            color: Colors.green, fontSize: 20, fontWeight: FontWeight.bold),
+        style: TextStyle(
+          fontFamily: 'Inconsolata',
+          color: Colors.green,
+          fontSize: 20,
+        ),
         children: [
           TextSpan(
             text: text ?? "Data",
-            style: GoogleFonts.inconsolata().copyWith(
+            style: TextStyle(
+              fontFamily: 'Inconsolata',
               color: textColor ?? Colors.white,
               fontSize: 18,
               letterSpacing: 2,

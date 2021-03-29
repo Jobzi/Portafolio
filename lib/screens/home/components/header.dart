@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portafolio/screens/home/widgets/section_title.dart';
 
 class Header extends StatelessWidget {
@@ -35,7 +34,8 @@ class Header extends StatelessWidget {
                 offstage: !context.isPhone ? true : false,
                 child: Text(
                   ">hello, world!_",
-                  style: GoogleFonts.inconsolata().copyWith(
+                  style: TextStyle(
+                    fontFamily: 'Inconsolata',
                     color: Colors.black,
                     fontSize: 18,
                     letterSpacing: 2,

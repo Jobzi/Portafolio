@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portafolio/constant/Colors.dart';
 import 'package:portafolio/screens/home/components/section_one.dart';
 import 'package:portafolio/screens/home/components/section_two.dart';
@@ -34,6 +33,7 @@ class HomeUI extends StatelessWidget {
                     WelcomeSection(),
                     SectionOne(),
                     SectionTwo(),
+                    Footer()
                   ],
                 ),
               ),
@@ -59,6 +59,32 @@ class HomeUI extends StatelessWidget {
   }
 }
 
+class Footer extends StatelessWidget {
+  const Footer({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(8.0),
+      child: Container(
+        padding: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.grey[400].withOpacity(0.2)),
+        child: Text(
+          "Powered by Jobzi",
+          style: TextStyle(
+              fontFamily: 'Inconsolata',
+              fontSize: 20,
+              color: ColorTheme.primary),
+        ),
+      ),
+    );
+  }
+}
+
 class PositionedRight extends StatelessWidget {
   const PositionedRight({
     Key key,
@@ -76,7 +102,8 @@ class PositionedRight extends StatelessWidget {
             quarterTurns: -1,
             child: Text(
               " jipsonmurillo@gmail.com",
-              style: GoogleFonts.inconsolata(wordSpacing: 5).copyWith(
+              style: TextStyle(
+                fontFamily: 'Inconsolata',
                 color: ColorTheme.yellow,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,

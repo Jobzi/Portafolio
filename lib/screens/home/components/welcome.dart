@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:portafolio/constant/Colors.dart';
 import 'package:portafolio/constant/sized_config.dart';
@@ -23,21 +22,24 @@ class WelcomeSection extends StatelessWidget {
           ),
           Text(
             "Hola, mi nombre es",
-            style: GoogleFonts.inconsolata().copyWith(
-                color: ColorTheme.yellow,
-                fontSize: 25,
-                fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontFamily: 'Inconsolata',
+              color: ColorTheme.yellow,
+              fontSize: 25,
+            ),
           ),
           Text(
-            "Jipson Murillo.",
-            style: GoogleFonts.raleway().copyWith(
+            "Jipson Murillo",
+            style: TextStyle(
+                fontFamily: 'Raleway',
                 color: Colors.white,
                 fontSize: 100,
                 fontWeight: FontWeight.bold),
           ),
           Text(
-            "Tengo una gran aficion por aprender constantemente \nme gusta salir a pasear, subir montañas, intento ser mejor cada dia.",
-            style: GoogleFonts.raleway().copyWith(
+            "Tengo una gran aficion por aprender constantemente. \n",
+            style: TextStyle(
+                fontFamily: 'Raleway',
                 color: Color(0xFF5e6668),
                 fontSize: 40,
                 fontWeight: FontWeight.bold),

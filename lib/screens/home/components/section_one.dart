@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:portafolio/constant/Colors.dart';
 import 'package:portafolio/constant/sized_config.dart';
@@ -32,8 +31,9 @@ class SectionOne extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.all(15.0),
                   child: Text(
-                    "¡Hola!, Soy Jipson Murillo desarrollador de Software del ombligo del mundo Ecuador. Tengo un gusto por el desarrollo de software. Mi gusto por el desarrollo comenzó desde los videojuegos de saber cómo funcionaba. El dia de hoy aun sigo jugando a los videojuegos como el Valorant me parece tan interesante como la industria del e-sports han llegado a transformar esta industria. Además tengo muchas aficiones como practicar el ciclismo, me gusta mucho nadar, tomar fotografías de todos los lugares que visito. Mi experiencia de desarrollo como tal comienza como tal desde 2015 como Ecuador  un país tan pequeño y el desarrollo de software no tan demandado me pareció una skill que cada día es más importante saber, me gusto mucho que el día de hoy sigo practicando y estudiando.",
-                    style: GoogleFonts.raleway().copyWith(
+                    "¡Hola!, Soy Jipson Murillo desarrollador de Software del ombligo del mundo Ecuador. Mi gusto por el desarrollo comenzó desde los videojuegos de saber cómo funcionaba. El dia de hoy aun sigo jugando a los videojuegos como el Valorant me parece tan interesante como la industria del e-sports han llegado a transformar esta industria. Además tengo muchas aficiones como practicar el ciclismo, me gusta mucho nadar, tomar fotografías de todos los lugares que visito. Mi experiencia con desarrollo como tal comienza en el 2015 como Ecuador un país tan pequeño y el desarrollo de software no tan demandado me pareció una skill que al dia de hoy es muy importante saber y que todas las personas deberian aprender a programar.",
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
@@ -65,7 +65,8 @@ class SectionOne extends StatelessWidget {
               padding: EdgeInsets.all(15.0),
               child: Text(
                 "Estas son algunas de las tecnologías con las que he trabajado recientemente:",
-                style: GoogleFonts.raleway().copyWith(
+                style: TextStyle(
+                    fontFamily: 'Raleway',
                     color: Color(0xFF5e6668),
                     fontSize: 15,
                     fontWeight: FontWeight.bold),
@@ -82,77 +83,88 @@ class SectionOne extends StatelessWidget {
                 children: [
                   Text(
                     "😍 Flutter",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "😃 JavaScript",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "😃 TypeScript",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "😏 node.js",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "☘️ Spring Boot",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "😅 React",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "😅 Angular",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "😋 WordPress",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "🔥 FireBase",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "⚡ MongoDB",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "🧿 MySql, Postgresql",
-                    style: GoogleFonts.raleway().copyWith(
+                    style: TextStyle(
+                        fontFamily: 'Raleway',
                         color: Color(0xFF5e6668),
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
