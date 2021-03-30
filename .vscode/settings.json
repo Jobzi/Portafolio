@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "dart.flutterSdkPath": "C:\\Users\\Jipso\\fvm\\versions\\2.0.3"
 }
