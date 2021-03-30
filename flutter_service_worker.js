@@ -40,11 +40,11 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/FontManifest.json": "bc1920330ef05759f2d32a6989ce26f4",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "240f8d377f8a92b717d3cba5abf58c48",
+"assets/NOTICES": "7339aef49d0585edf26fdcdce4da1f0d",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "49a6967482b3a1373d58ae518f3b52f9",
-"index.html": "712a8bba032ce635637a110fedd4d559",
-"/": "712a8bba032ce635637a110fedd4d559",
+"main.dart.js": "b97b680e69ba1f2a9eef5f925a1be788",
+"index.html": "bd8cf6e521433c4f3d9355ac39365082",
+"/": "bd8cf6e521433c4f3d9355ac39365082",
 "manifest.json": "29e5bc22a69f134e9add95e7dd6835f1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -55,7 +55,7 @@ const RESOURCES = {
 "splash/img/light-3x.png": "5b7e334959fb3addef6676a3a463e645",
 "splash/img/dark-2x.png": "4c7f1022dcd38fad0332ca52d081e916",
 "splash/img/light-1x.png": "efa1f9c18191e5ba5e460e6d0ce14e07",
-"splash/style.css": "7265a17a083dd855318e9590097c5424"
+"splash/style.css": "ebbed3870e854e0549eb2d92ca8abe2e"
 };
 
 // The application shell files that are downloaded before a service worker can
